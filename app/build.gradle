@@ -29,42 +29,7 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    testImplementation 'junit:junit:4.12'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-    // 基础库
-    api 'com.google.android.material:material:1.2.1'
-    api 'androidx.appcompat:appcompat:1.2.0'
-    api 'androidx.legacy:legacy-support-v4:1.0.0'
-    api 'androidx.cardview:cardview:1.0.0'
-    api 'androidx.constraintlayout:constraintlayout:2.0.1'
-    api 'androidx.multidex:multidex:2.0.1'
-
-    // 网络请求
-    api 'com.google.code.gson:gson:2.8.5'
-    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
-    implementation 'com.squareup.okhttp3:okhttp:3.12.0'
-    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
-    implementation 'com.squareup.okio:okio:1.15.0'
-    // 用于链式调用
-    api "io.reactivex.rxjava2:rxjava:2.2.9"
-    api 'io.reactivex.rxjava2:rxandroid:2.1.0'
-
-    api 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'
-
-    // Room
-    implementation 'androidx.room:room-runtime:2.2.5'
-    annotationProcessor 'androidx.room:room-compiler:2.2.5'
-    implementation 'androidx.room:room-rxjava2:2.2.5'
-    //    implementation 'androidx.paging:paging-runtime:2.1.2'
-    testImplementation "androidx.room:room-testing:2.2.5"
-
-    //    implementation "android.arch.lifecycle:common-java8:1.0.0"
-    api 'androidx.lifecycle:lifecycle-extensions:2.2.0'
-    api 'androidx.lifecycle:lifecycle-reactivestreams:2.2.0'
+    implementation project(path: ':mvvm')
 }
 
