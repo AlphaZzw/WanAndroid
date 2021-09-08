@@ -1,58 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FFFFFF</color>
-    <color name="colorPrimaryDark">#549cf8</color>
-    <color name="colorAccent">#EF5362</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
 
-    <color name="color_gray">#9a9a9a</color>
-    
-    <color name="color_gray_translucent">#5000</color>
+    <color name="colorTheme">#ffce3d3a</color>
+    <!--页面背景的颜色-->
+    <color name="color_page_bg">#F1F3F4</color>
 
+    <color name="colorWhite">#ffffffff</color>
+    <color name="colorWhiteHalf">#bbffffff</color>
 
-    <color name="app_color_theme_1">#EF5362</color> <!-- Grapefruit -->
-    <color name="app_color_theme_2">#FE6D4B</color> <!-- Bittersweet -->
-    <color name="app_color_theme_3">#FFCF47</color> <!-- Sunflower -->
-    <color name="app_color_theme_4">#9FD661</color> <!-- Grass -->
-    <color name="app_color_theme_5">#3FD0AD</color> <!-- Mint -->
-    <color name="app_color_theme_6">#2BBDF3</color> <!-- Aqua -->
-    <color name="app_color_theme_7">#00b0ff</color> <!-- Blue Jeans -->
-    <color name="app_color_theme_8">#AC8FEF</color> <!-- Lavender -->
-    <color name="app_color_theme_9">#EE85C1</color> <!-- Pink Rose -->
+    <!--主页tab背景-->
+    <color name="colorTabBg">#ffffffff</color>
+    <color name="colorTabTextCheck">#ffce3d3a</color>
+    <color name="colorTabTextNormal">#585858</color>
+    <color name="colorTabLine">#ffce3d3a</color>
 
-    <color name="color_pink">#ff4081</color>
-    <color name="color_orange">#dd2c00</color>
-    <color name="color_blue_dark">#ee447AA4</color>
-
+    <!--侧边栏分割线-->
+    <color name="colorNavLine">#E0E0E0</color>
+    <!--导航数据侧边栏背景色-->
+    <color name="colorNaviBg">#f3f3f3</color>
 
 
+    <!--分割线-->
+    <color name="colorLine">#EBEBEB</color>
+    <!--首页分割线-->
+    <color name="colorHomeLine">#D4D4D4</color>
 
-    <!-- title 半透明背景颜色 -->
-    <color name="color_title_bg">#CCFFFFFF</color>
-    <!-- 默认背景色 -->
-    <color name="backgroundColor">#EEEEEE</color>
+    <color name="colorLineDeep">#BBBBBB</color>
 
-    <!-- white -->
-    <color name="color_white">#FFFFFF</color>
-    <color name="color_black">#000000</color>
+    <!--item的分割线-->
+    <color name="colorLineItem">#FFDDDDDD</color>
 
-    <color name="color_blue">#87CEEB</color>
+    <!--tab标签栏文字的颜色-->
+    <color name="colorTabText">#585858</color>
+    <!--正文文字颜色-->
+    <color name="colorContent">#ff333333</color>
+    <!--水波纹或5.0以下选择器颜色-->
+    <color name="tabBackground">#777D7D7D</color>
+    <!--item的水波纹颜色-->
+    <color name="itemBackground">#DD7D7D7D</color>
+    <!--item的5.0一下版本选择器颜色-->
+    <color name="itemLowBackground">#d9d9d9</color>
 
-    <!-- item 标题颜色 -->
-    <color name="color_item_title">#000000</color>
+    <!--透明色-->
+    <color name="colorTransparent">#00000000</color>
+    <!--半透明-->
+    <color name="colorBanTransparent">#11000000</color>
+    <!--首页item文字颜色-->
+    <color name="colorSubtitle">#999</color>
 
-    <color name="color_lighter_gray">#ddd</color>
-    <color name="color_darker_gray">#aaa</color>
+    <color name="colorTitle">#666</color>
+    <!--谈红色  用于首页调整点击变色-->
+    <color name="colorSmallRed">#faebeb</color>
 
-    <color name="color_division_line">@color/color_lighter_gray</color>
-    
-    <color name="color_translucent">#00000000</color>
+    <!--电影评分-->
+    <color name="colorRateRed">#FB5B81</color>
 
-    <color name="color_aquamarine">#7FFFD4</color>
+    <!--没有水波纹效果的颜色选择器-->
+    <color name="colorItemBackground">#d9d9d9</color>
 
-    <color name="color_light_black">#5000</color>
+    <!--选择分类按下颜色-->
+    <color name="colorChoosePress">#DDD</color>
 
+    <!--暂时用于反馈文字-->
+    <color name="text_common">#191919</color>
 
-
+    <color name="text_deed_bg">#f6f6f6</color>
+    <!--dialog的查看详情键-->
+    <color name="colorBtDialog">#38659C</color>
 
 
 </resources>

@@ -45,7 +45,7 @@ import io.reactivex.disposables.Disposable;
  * @author zhuzhengwei
  * @date 2021/9/7/18:01
  */
-public abstract class baseActivity<VM extends AndroidViewModel, SV extends ViewDataBinding> extends AppCompatActivity {
+public abstract class BaseActivity<VM extends AndroidViewModel, SV extends ViewDataBinding> extends AppCompatActivity {
     // ViewModel
     protected VM viewModel;
     // 布局view
@@ -60,6 +60,7 @@ public abstract class baseActivity<VM extends AndroidViewModel, SV extends ViewD
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+
 
     @Override
     public void setContentView(int layoutResID) {

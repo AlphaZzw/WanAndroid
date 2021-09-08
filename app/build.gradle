@@ -12,7 +12,9 @@ android {
         versionCode rootProject.ext.android.versionCode
         versionName rootProject.ext.android.versionName
     }
-
+    dataBinding {
+        enabled = true
+    }
 
     buildTypes {
         release {
@@ -31,5 +33,12 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
 
     implementation project(path: ':mvvm')
+    implementation 'com.hyman:flowlayout-lib:1.1.2'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.cocosw:bottomsheet:1.4.0'
+    implementation 'me.drakeet.support:toastcompat:1.1.0'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.4'
+    implementation 'com.github.youlookwhat:SBannerView:1.1.5'
+    implementation 'com.github.youlookwhat:ByWebView:1.1.3'
 }
 

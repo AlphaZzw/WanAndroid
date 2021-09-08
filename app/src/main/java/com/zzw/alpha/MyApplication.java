@@ -7,10 +7,10 @@
 package com.zzw.alpha;
 
 import android.app.Activity;
-import android.app.Application;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.zzw.mvvm.base.RootApplication;
 
 
 /**
@@ -23,7 +23,7 @@ import android.util.Log;
  * @author zhuzhengwei
  * @date 2021/8/31/17:31
  */
-public class MyApplication extends Application {
+public class MyApplication extends RootApplication {
 
     private String TAG = "MyApplication";
 
