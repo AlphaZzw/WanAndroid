@@ -123,7 +123,7 @@ public abstract class BaseFragment<VM extends AndroidViewModel, SV extends ViewD
     private void initViewModel() {
         Class<VM> viewModelClass = ClassUtil.getViewModel(this);
         if (viewModelClass != null) {
-            this.viewModel = new ViewModelProvider(this).get(viewModelClass);
+            viewModel = new ViewModelProvider(this).get(viewModelClass);
         }
     }
 

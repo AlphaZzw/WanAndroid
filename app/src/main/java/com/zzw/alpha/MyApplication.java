@@ -7,6 +7,7 @@
 package com.zzw.alpha;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -27,9 +28,16 @@ public class MyApplication extends RootApplication {
 
     private String TAG = "MyApplication";
 
+    protected static MyApplication myApplication;
+
+    public static MyApplication getInstance() {
+        return myApplication;
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();
+        myApplication = this;
         registerActivityLifecycleCallbacks(mCallbacks);
     }
 
