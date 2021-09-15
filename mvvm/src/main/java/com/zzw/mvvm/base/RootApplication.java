@@ -10,6 +10,8 @@ import android.content.Context;
 
 import androidx.multidex.MultiDexApplication;
 
+import com.zzw.mvvm.http.HttpUtils;
+
 /**
  * <p>Class: com.zzw.mvvm.base.RootApplication</p >
  * <p>Description:</p >
@@ -27,7 +29,7 @@ public class RootApplication extends MultiDexApplication {
     public void onCreate() {
         super.onCreate();
         mContext = this;
-
+        HttpUtils.getInstance().init(this);
     }
 
     public static Context getContext() {

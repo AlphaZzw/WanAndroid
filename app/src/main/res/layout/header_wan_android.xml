@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <me.jingbin.sbanner.SBannerView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:indicator_height="8dp"
+            app:indicator_margin="8dp"
+            app:indicator_padding="2dp"
+            app:indicator_width="8dp"
+            app:is_back_loop="false"
+            app:page_left_margin="80dp"
+            app:page_right_margin="80dp"
+            tools:background="@color/colorLine" />
+    </RelativeLayout>
+</layout>

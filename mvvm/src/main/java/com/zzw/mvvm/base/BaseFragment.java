@@ -23,6 +23,7 @@ import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.ViewModelProvider;
 
@@ -59,12 +60,12 @@ public abstract class BaseFragment<VM extends AndroidViewModel, SV extends ViewD
     private AnimationDrawable mAnimationDrawable;
     private CompositeDisposable mCompositeDisposable;
 
-    private Activity activity;
+    private FragmentActivity activity;
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        activity = (Activity) context;
+        activity = getActivity();
     }
 
     @Nullable
