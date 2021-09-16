@@ -6,8 +6,12 @@
  */
 package com.zzw.alpha.http;
 
+import com.zzw.alpha.bean.wanandroid.WanAndroidBannerBean;
 import com.zzw.mvvm.http.HttpUtils;
 import com.zzw.mvvm.utils.BuildFactory;
+
+import io.reactivex.Observable;
+import retrofit2.http.GET;
 
 /**
  * <p>Class: com.zzw.alpha.http.HttpClient</p >
@@ -27,7 +31,11 @@ public interface HttpClient {
         }
     }
 
-    /**----------------------------------------interface-----------------------------------------------**/
+    /**
+     * ----------------------------------------interface-----------------------------------------------
+     **/
 
 
+    @GET("banner/json")
+    Observable<WanAndroidBannerBean> getWanAndroidBanner();
 }
