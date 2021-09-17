@@ -17,8 +17,10 @@ import android.widget.RelativeLayout;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.Observer;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.zzw.alpha.R;
+import com.zzw.alpha.adapter.WanAndroidAdapter;
 import com.zzw.alpha.bean.wanandroid.WanAndroidBannerBean;
 import com.zzw.alpha.databinding.FragmentWanAndroidBinding;
 import com.zzw.alpha.databinding.HeaderWanAndroidBinding;
@@ -73,6 +75,9 @@ public class HomeFragment extends BaseFragment<WanAndroidListViewModel, Fragment
     }
 
     private void initRefreshView() {
+        bindingView.xrvWan.setLayoutManager(new LinearLayoutManager(bindingView.xrvWan.getContext()));
+        WanAndroidAdapter adapter = new WanAndroidAdapter();
+        bindingView.xrvWan.setAdapter(adapter);
         headerBinding = DataBindingUtil.inflate(getLayoutInflater(), R.layout.header_wan_android, (ViewGroup) bindingView.xrvWan.getParent(), false);
         bindingView.xrvWan.addHeaderView(headerBinding.getRoot());
         width = DensityUtil.getDisplayWidth() - DensityUtil.dip2px(bindingView.xrvWan.getContext(), 160);

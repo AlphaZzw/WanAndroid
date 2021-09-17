@@ -6,10 +6,10 @@
  */
 package com.zzw.mvvm.base;
 
-import android.app.Activity;
 import android.content.Context;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -90,9 +90,11 @@ public abstract class BaseFragment<VM extends AndroidViewModel, SV extends ViewD
         if (getUserVisibleHint()) {
             mIsVisible = true;
             onVisible();
+            Log.i("WanAndroid", "setUserVisibleHint: " + mIsVisible);
         } else {
             mIsVisible = false;
             onInvisible();
+            Log.i("WanAndroid", "setUserVisibleHint: " + mIsVisible);
         }
     }
 

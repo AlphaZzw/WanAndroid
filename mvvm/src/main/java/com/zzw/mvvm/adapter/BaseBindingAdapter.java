@@ -9,6 +9,7 @@ package com.zzw.mvvm.adapter;
 import android.view.ViewGroup;
 
 import androidx.annotation.LayoutRes;
+import androidx.annotation.NonNull;
 import androidx.databinding.ViewDataBinding;
 
 import java.util.List;
@@ -36,6 +37,12 @@ public abstract class BaseBindingAdapter<T, B extends ViewDataBinding> extends B
     public BaseBindingAdapter(@LayoutRes int layoutId, List<T> data) {
         super(data);
         mLayoutId = layoutId;
+    }
+
+    @NonNull
+    @Override
+    public BaseBindingHolder<T, B> onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return new ViewHolder(parent, mLayoutId);
     }
 
     private class ViewHolder extends BaseBindingHolder<T, B> {
