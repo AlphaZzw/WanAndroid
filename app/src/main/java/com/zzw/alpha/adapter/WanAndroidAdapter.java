@@ -38,7 +38,11 @@ public class WanAndroidAdapter extends BaseBindingAdapter<ArticlesBean, ItemWanA
 
     @Override
     protected void bindView(BaseBindingHolder holder, ArticlesBean bean, int position, ItemWanAndroidBinding binding) {
+        if (bean != null) {
+            binding.setBean(bean);
+            binding.setAdapter(WanAndroidAdapter.this);
 
+        }
     }
 
 
